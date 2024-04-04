@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int num;
+int res;
+    puts("Insira um numero inteiro:");
+    scanf("%d", &num);
+    res=num%2;
+    if(res==0){
+    puts("O numero e par");
+    }else{
+    puts("O numero e impar");
+    } return 0;
+}
