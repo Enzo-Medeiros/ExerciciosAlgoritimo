@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int num;
+    puts("Insira um numero inteiro:");
+    scanf("%d", &num);
+    if(num>0){
+        printf("O numero e positivo");
+    }else if(num<0){
+        printf("O numero e negativo");
+    }else if(num==0){
+        printf("O numero e zero");
+    } return 0;
+}
