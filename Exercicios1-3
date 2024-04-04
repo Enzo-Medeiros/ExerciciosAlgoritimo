@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(){
+int num;
+int res;
+    puts("Insira um ano:");
+    scanf("%d", &num);
+    res=num%4;
+    if(res==0){
+    puts("O ano e bisesto");
+    }else{
+    puts("O numero nao e bisesto");
+    } return 0;
+}
