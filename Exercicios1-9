@@ -1,1 +1,11 @@
-
+#include <stdio.h>
+int main(){
+int i;
+        puts("Insira um numero para o contador:");
+        scanf("%d", &i);
+    while(i>=1){
+        printf("%d ", i);
+        i--;
+    }
+    return 0;
+}
