@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+float peso, altura, altura2, resultado;
+    puts("Insira seu peso:");
+    scanf("%f", &peso);
+    puts("Insira sua altura:");
+    scanf("%f", &altura);
+altura2=altura*altura;
+resultado=peso/altura2;
+    printf("Seu imc e %.2f\n", resultado);
+    if(resultado<18.5){
+        printf("Voce e magro");
+    }else if(resultado>=18.5&&resultado<=24.9){
+        printf("Voce esta no peso normal");
+    }else if(resultado>=25&&resultado>=29.9){
+        printf("Voce esta com sobrepeso");
+    }else if(resultado>=30&&resultado>=39.9){
+        printf("Voce esta obeso");
+    }else if(resultado>=40){
+        printf("Voce esta com obesidade grave");
+    }
+}
