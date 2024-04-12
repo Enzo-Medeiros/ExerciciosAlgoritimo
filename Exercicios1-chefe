@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+int i=10, num, tab=1;
+        puts("Insira um numero para receber a tabuada:");
+        scanf("%d", &num);
+    while(i>=1){
+        printf("%d x %d = %d\n", num, tab, num*tab);
+
+        i--;
+        tab++;
+    }
+}
