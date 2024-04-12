@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+float tempF, tempC, mult;
+        puts("Insira a temperatura em Celsius:");
+        scanf("%f", &tempC);
+mult=tempC*1.8;
+tempF=mult+32;
+        printf("A temperatura e %.2f em fahrenheit", tempF);
+    }
