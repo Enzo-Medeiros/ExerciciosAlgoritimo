@@ -1,1 +1,15 @@
-
+#include <stdio.h>
+int main(){
+int alu, i=1;
+float nota1, soma, media;
+        puts("Insira a quantidade de alunos:");
+        scanf("%d", &alu);
+    while(i<=alu){
+        printf("Insira a nota do aluno %d\n", i);
+        scanf("%f", &nota1);
+soma=nota1+nota1;
+        i++;
+media=soma/alu;
+    }
+    printf("Media: %.2f", media);
+}
