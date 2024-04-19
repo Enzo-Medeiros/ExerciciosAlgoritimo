@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+int num, i=1, num2, soma=0, media;
+        puts("Insira a quantidade de numeros:");
+        scanf("%d", &num);
+    while(i<=num){
+        printf("Insira os numeros a somar %d\n", i);
+        scanf("%d", &num2);
+soma+=num2;
+        i++;
+    }
+media=soma/num;
+    printf("Media: %d", media);
+}
