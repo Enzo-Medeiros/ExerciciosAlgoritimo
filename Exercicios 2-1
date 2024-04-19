@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+int num, res=0, i;
+
+        puts("Insira um numero: ");
+        scanf("%d", &num);
+    for (i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+       res++;
+       break;
+}}
+    if(res==0){
+        printf("O numero e primo");
+    } else
+    printf("O numero nao e primo");
+}
