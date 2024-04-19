@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+srand(time(NULL));
+int numR=rand() % 20+1;
+int op;
+printf("Tente adivinhar o numero:");
+        do{
+            
+            scanf("%d", &op);
+            if(op!=numR){
+                printf("Voce errou\n");
+            if(op<numR){
+                printf("O numero e maior que o inserido");
+            } else
+            printf("O numero e menor que o inserido");
+            }else
+            printf("Voce acertou\n");
+        }while(op!=numR);
+}
