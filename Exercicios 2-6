@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+int num, i=0;
+        printf("Digite um numero inteiro: ");
+        scanf("%d", &num);
+        while(num!=0){
+num/= 10;
+        i++;
+        }
+        printf("O numero tem %d digitos", i);
+}        
