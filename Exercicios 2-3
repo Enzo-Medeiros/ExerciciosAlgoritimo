@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+float tempF, tempC, mult, sub, div;
+int op;
+
+        printf("Selecione a temperatura para conversao:\n (1) C para F   (2) F para C\n");
+        scanf("%d", &op);
+        switch (op){
+
+            case 1:
+        puts("Insira a temperatura em Celsius:");
+        scanf("%f", &tempC);
+mult=tempC*1.8;
+tempF=mult+32;
+        printf("A temperatura e %.2f em Fahrenheit", tempF);
+            break;
+            case 2:
+        puts("Insira a temperatura em Celsius:");
+        scanf("%f", &tempF);
+sub=tempF-32;
+tempC=sub/1.8;
+        printf("A temperatura e %.2f em Celsius", tempC);
+            break;
+            default:
+            printf("Opcao invalida");
+}
+}
