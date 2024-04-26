@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define N 10
+int main(void){
+char r1[N],r2[N],r3[N],r4[N],r5[N],r6[N],r7[N];
+char resp1[N]={"a"},resp2[N]={"d"},resp3[N]={"a"},resp4[N]={"b"},resp5[N]={"d"},resp6[N]={"c"},resp7[N]={"b"};
+int ok=0;
+        printf("\nQuestao 1: Qual e a sintaxe correta para declarar uma variavel inteira em C?\na) int x;\nb) var x;\nc) integer x;\nd) numero x;\n");
+        fgets(r1, N, stdin);
+            fflush(stdin);
+r1[strcspn(r1, "\n")] = '\0';
+ok=strcmp(resp1,r1);
+            if(ok==0){
+                printf("Resposta certa!");
+            }else{
+            printf("Resposta errada, a resposta certa era a letra a");
+            }
+            
+
+}
