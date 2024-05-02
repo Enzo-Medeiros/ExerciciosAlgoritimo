@@ -5,8 +5,9 @@
 #define N 10
 int main(void){
 char r1[N],r2[N],r3[N],r4[N],r5[N],r6[N],r7[N];
-char resp1[N]={"a"},resp2[N]={"d"},resp3[N]={"a"},resp4[N]={"b"},resp5[N]={"d"},resp6[N]={"c"},resp7[N]={"b"};
+char resp1[N]={"a"},resp2[N]={"d"},resp3[N]={"a"},resp4[N]={"b"},resp5[N]={"c"},resp6[N]={"c"},resp7[N]={"b"};
 int ok=0;
+//1
         printf("\nQuestao 1: Qual e a sintaxe correta para declarar uma variavel inteira em C?\na) int x;\nb) var x;\nc) integer x;\nd) numero x;\n");
         fgets(r1, N, stdin);
             fflush(stdin);
@@ -15,8 +16,72 @@ ok=strcmp(resp1,r1);
             if(ok==0){
                 printf("Resposta certa!");
             }else{
-            printf("Resposta errada, a resposta certa era a letra a");
+            printf("\nResposta errada, a resposta certa era a letra a\n");
             }
-            
-
+//2
+        printf("\nQuestao 2: Qual e a funcao usada para imprimir no console em C?\na) print();\nb) console.log();\nc) printtext();\nd) printf();\n");
+        fgets(r2, N, stdin);
+            fflush(stdin);
+r2[strcspn(r2, "\n")] = '\0';
+ok=strcmp(resp2,r2);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra d\n");
+            }
+//3
+        printf("\nQuestao 3: O que o operador '==' faz em C?\na) Atribui um valor a uma variavel.\nb) Compara dois valores.\nc) Divide dois valores.\nd) Multiplica dois valores.\n");
+        fgets(r3, N, stdin);
+            fflush(stdin);
+r3[strcspn(r3, "\n")] = '\0';
+ok=strcmp(resp3,r3);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra a\n");
+            }    
+//4
+         printf("\nQuestao 4: Qual e o operador logico para 'OU' em C?\na) &&\nb) ||\nc) !\nd) <>\n");
+        fgets(r4, N, stdin);
+            fflush(stdin);
+r4[strcspn(r4, "\n")] = '\0';
+ok=strcmp(resp4,r4);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra b\n");
+            }
+//5
+        printf("\nQuestao 5: Qual e a estrutura de controle usada para repeticao em C?\na) if\nb) switch\nc) for\nd) else\n");
+        fgets(r5, N, stdin);
+            fflush(stdin);
+r5[strcspn(r5, "\n")] = '\0';
+ok=strcmp(resp5,r5);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra c\n");
+            }
+//6
+        printf("\nQuestao 6: Qual e a funcao usada para ler um numero inteiro do teclado em C?\na) read_integer();\nb) input_int();\nc) scanf();\nd) get_int();\n");
+        fgets(r6, N, stdin);
+            fflush(stdin);
+r6[strcspn(r6, "\n")] = '\0';
+ok=strcmp(resp6,r6);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra c\n");
+            }
+//7
+        printf("\nQuestao 7: Qual e o valor da expressao 5 + 3 * 2 em C?\na) 16\nb) 11\nc) 13\nd) 10\n");
+        fgets(r7, N, stdin);
+            fflush(stdin);
+r7[strcspn(r7, "\n")] = '\0';
+ok=strcmp(resp7,r7);
+            if(ok==0){
+                printf("\nResposta certa!\n");
+            }else{
+            printf("\nResposta errada, a resposta certa era a letra b\n");
+            }
 }
