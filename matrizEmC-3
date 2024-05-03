@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void){
+     
+int mat1[4][4]={{1,3,5,7},{9,11,13,15},{17,19,21,23},{25,27,29,31}};
+int soma[2][2];
+int i,j;
+
+        printf("As somas das casas das primeiras linhas sao: \n");
+        for (i = 0; i < 4; i++)
+        {
+        printf("%d + %d = %d\n", mat1[0][i], mat2[0][i], mat1[0][i]+mat2[0][i]);
+soma[0][i]=mat1[0][i]+mat2[0][i];
+        }
+        
+        printf("As somas das casas das segundas linhas sao: \n");
+        for (i = 0; i < 4; i++)
+        {
+        printf("%d + %d = %d\n", mat1[1][i], mat2[1][i], mat1[1][i]+mat2[1][i]);
+soma[1][i]=mat1[1][i]+mat1[1][i];
+        }
+        
+}
