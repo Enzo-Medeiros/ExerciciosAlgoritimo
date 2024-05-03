@@ -13,12 +13,21 @@ int i,j;
         for (i = 0; i < 2; i++)
         {
         printf("%d + %d = %d\n", mat1[0][i], mat2[0][i], mat1[0][i]+mat2[0][i]);
+soma[0][i]=mat1[0][i]+mat2[0][i];
         }
         
         printf("As somas das casas das segundas linhas sao: \n");
         for (i = 0; i < 2; i++)
         {
         printf("%d + %d = %d\n", mat1[1][i], mat2[1][i], mat1[1][i]+mat2[1][i]);
+soma[1][i]=mat1[1][i]+mat2[1][i];
         }
-        
+        for (i = 0; i < 2; i++)
+        {
+            for (j = 0; j < 2; j++)
+            {
+                printf(" |%d| ", soma[i][j]);
+            }
+        printf("\n");    
+        }
 }
