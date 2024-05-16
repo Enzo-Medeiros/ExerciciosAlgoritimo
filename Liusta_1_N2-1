@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h> 
+
+#define N 50
+
+ struct aluno{ 
+    
+    char nome[50];
+    int idade;
+    int mat;
+    float med;
+}; 
+typedef struct aluno aluno;
+ int main(){
+
+    aluno aluno;
+    int n = sizeof(aluno.nome) / sizeof(aluno.nome[0]);
+
+    printf("Insira as informacoes para cadastro\n");
+        printf("Nome: ");
+            fgets(aluno.nome,N,stdin);
+                fflush(stdin);
+        printf("Idade: ");
+            scanf("%d", &aluno.idade);
+        printf("Matricula: ");
+            scanf("%d", &aluno.mat);
+        printf("Media: ");
+            scanf("%f", &aluno.med);
+        
+        printf("Nome: %sIdade: %d\nMatricula: %d\nMedia: %.2f", aluno.nome, aluno.idade, aluno.mat, aluno.med);
+
+}
