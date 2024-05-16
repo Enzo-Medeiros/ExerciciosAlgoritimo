@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h> 
+
+#define N 50
+#define L 3
+ struct produto{ 
+    
+    char nome[50];
+    float pre;
+    int stk;
+}; 
+typedef struct produto prod;
+ int main(){
+int i;
+    prod prod[L];
+for (i=0; i<L; i++){
+    printf("Insira as informacoes do produto %d\n", i+1);
+        printf("Produto: ");
+            fgets(prod[i].nome,N,stdin);
+                fflush(stdin);
+        printf("Preco: ");
+            scanf("%f", &prod[i].pre);      
+        printf("Estoque: ");
+            scanf("%d", &prod[i].stk);
+                fflush(stdin);
+}
+for (i=0; i<L; i++){
+        printf("Info do produto %d:\n", i+1);
+        printf("Produto: %sPreco: %.2f\nEstoque: %d\n", prod[i].nome, prod[i].pre, prod[i].stk);
+
+}
+}
