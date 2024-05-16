@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h> 
+
+#define N 50
+#define L 3
+ struct pessoa{ 
+    
+    char nome[N];
+    int idd;
+    char city[N];
+}; 
+typedef struct pessoa pess;
+ int main(){
+int i;
+    pess pess[L];
+for (i=0; i<L; i++){
+    printf("Insira as informacoes da pessoa %d\n", i+1);
+        printf("Nome: ");
+            fgets(pess[i].nome,N,stdin);
+                fflush(stdin);
+        printf("Idade: ");
+            scanf("%d", &pess[i].idd);    
+                fflush(stdin);  
+        printf("Cidade: ");
+            fgets(pess[i].city,N,stdin);
+                fflush(stdin);
+}
+for (i=0; i<L; i++){
+        printf("Info da pessoa %d:\n", i+1);
+        printf("Nome: %sIdade: %d\nCidade: %s\n", pess[i].nome, pess[i].idd, pess[i].city);
+
+}
+}
