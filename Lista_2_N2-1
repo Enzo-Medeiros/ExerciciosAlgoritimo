@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h> 
+
+int pos(int num1){
+      if (num1>=0){
+            printf("O numero e positivo");
+      } else{
+            printf("O numero e negativo");
+      }
+      
+}
+ int main(void){
+
+      pos(-3);
+            return 0;
+}
