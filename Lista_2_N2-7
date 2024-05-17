@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h> 
+#include <time.h>
+
+int dado(void){
+      srand(time(NULL));
+ 
+      printf("Resultado: %d", rand() % 6);
+      
+}
+ int main(void){
+
+      dado();
+            return 0;
+}
