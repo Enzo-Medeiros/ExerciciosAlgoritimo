@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h> 
+
+int delta(int num1, int num2, int num3){
+      return num2*num2-4*num1*num3;
+      
+}
+ int main(void){
+
+      int del = delta(3, 3, 3);
+      printf("%d\n", del);
+            return 0;
+}
