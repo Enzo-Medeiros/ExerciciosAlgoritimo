@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h> 
+
+int big(int num1, int num2){
+      if(num1<num2){
+            printf("%d e menor", num1);
+      } else if(num1>num2){
+            printf("%d e menor", num2);
+      } else{
+            printf("Os numeros sao iguais");
+      }
+      
+}
+ int main(void){
+
+      big(4,4);
+            return 0;
+}
