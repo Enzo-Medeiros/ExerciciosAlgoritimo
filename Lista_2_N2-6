@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h> 
+
+int big(int num1, int num2, int num3){
+      if(num1<num2&&num1<num3){
+            printf("%d e menor", num1);
+      } else if(num1>num2&&num2<num3){
+            printf("%d e menor", num2);
+      } else if (num3<num2&&num3<num1){
+            printf("%d e maior", num3);
+      } else{
+            printf("Os numeros sao iguais");
+      }
+      
+}
+ int main(void){
+
+      big(5,2,5);
+            return 0;
+}
